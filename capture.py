@@ -16,10 +16,3 @@ with sc.get_microphone(id=str(sc.default_speaker().name), include_loopback=True)
 
 
 
-from pydub import AudioSegment
-from pydub.playback import play
- 
-# for playing wav file
-song = AudioSegment.from_wav("out.wav")
-print('playing sound using  pydub')
-play(song)
